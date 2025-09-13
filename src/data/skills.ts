@@ -21,8 +21,8 @@ export const skillsData = {
         "Node.js",
         "Express.js",
         "Socket.io",
-        "Temporal",
-        "WebSocket"
+        "WebSocket",
+        "Temporal"
       ]
     },
     {
@@ -59,8 +59,8 @@ export const skillsData = {
       "title": "Programmation scientifique",
       "skills": [
         "NumPy",
-        "Matplotlib",
         "Pandas",
+        "Matplotlib",
         "PyTorch",
         "Matlab"
       ]
