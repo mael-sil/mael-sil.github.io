@@ -58,6 +58,9 @@ const currentYear = new Date().getFullYear();
 @media (max-width: 768px) {
   .footer-content {
     padding: 0 1rem;
+    z-index: 100;
+    position: absolute;
+    background: var(--background-color);
   }
 
   .footer-text {
