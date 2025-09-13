@@ -9,29 +9,28 @@ import { skillsData } from '@/data/skills'
     <div class="about-container">
       <h2>À propos de moi</h2>
 
-            <div class="about-content">
+      <div class="about-content">
         <div class="about-text">
           <p class="about-intro">
-            Étudiant passionné en informatique, je suis actuellement en BUT informatique à l'IUT
-            Lyon 1 après un parcours enrichissant en physique.
+            Étudiant passionné en informatique, je suis actuellement en troisième année de BUT informatique à l'IUT
+            Lyon 1 après une année spéciale qui combine les deux premières années du BUT en un an.
           </p>
 
           <p>
-            Mon parcours varié m'a permis de développer une approche analytique et rigoureuse.
-            De la physique à l'informatique, j'ai acquis une
-            solide base en programmation scientifique (Python, C++) avant de me spécialiser dans le
-            développement web fullstack.
+            Je suis particulièrement intéressé par le développement fullstack, le développement backend ainsi que
+            l'approfondissement de mes connaissances en DevOps. Mon objectif est de contribuer à des projets innovants
+            tout en consolidant mes compétences techniques au sein d'une équipe dynamique.
           </p>
 
           <p>
-            Je suis particulièrement intéressé par le développement fullstack, le DevOps et
-            l'intelligence artificielle.
+            Mon parcours est atypique puisque j'ai commencé mes études supérieures en physique, ce qui m'a permis
+            d'acquérir une approche méthodique et rigoureuse. Je me suis ensuite réorienté vers l'informatique qui est
+            un domaine qui m'a toujours intéressé et qui me permet de travailler sur des projets plus concrets.
           </p>
           <p>
-            Mon expérience en tant que stagiaire développeur fullstack
-            chez StillDev m'a permis de découvrir le développement informatique en entreprise au
-            sein d'une équipe de 3 développeurs. Dans ce cadre, j'ai travaillé avec Vue.js et
-            FastAPI, tout en découvrant les pratiques DevOps modernes.
+            Lors de mon expérience récente de 12 semaines en tant que stagiaire développeur fullstack chez Stilldev,
+            j'ai contribué au développement d'une plateforme B2B avec Vue.js et FastAPI. Ce qui m'a permis de consolider
+            mes compétences techniques et découvrir les pratiques DevOps en contexte professionnel.
           </p>
         </div>
 
@@ -43,7 +42,7 @@ import { skillsData } from '@/data/skills'
             </h3>
             <p>
               <strong>Actuellement en recherche d'une alternance d'un an</strong> à partir de
-              septembre 2025 dans le domaine du développement fullstack, avec un rythme d'une
+              septembre 2025 dans le domaine du développement fullstack/backend, avec un rythme d'une
               semaine en entreprise pour une semaine en formation.
             </p>
           </div>
@@ -55,7 +54,8 @@ import { skillsData } from '@/data/skills'
             </h3>
             <ul>
               <li><strong>StillDev (2025, 3 mois) :</strong> Stage développeur fullstack - Vue.js, FastAPI, Docker</li>
-              <li><strong>Freelance (Depuis 2025) :</strong> Développement web et applications notamment pour StillDev</li>
+              <li><strong>Freelance (Depuis 2025) :</strong> Développement web et applications notamment pour StillDev
+              </li>
             </ul>
             <router-link to="/experiences" class="btn btn-primary btn-info">Plus d'informations</router-link>
           </div>
@@ -65,19 +65,11 @@ import { skillsData } from '@/data/skills'
       <div class="skills-overview">
         <h3>Compétences techniques</h3>
         <div class="skills-grid">
-          <div
-            v-for="category in skillsData.categories"
-            :key="category.id"
-            class="skill-category"
-          >
+          <div v-for="category in skillsData.categories" :key="category.id" class="skill-category">
             <h4>{{ category.title }}</h4>
             <div class="skill-tags-container">
               <div class="skill-tags">
-                <span
-                  v-for="skill in category.skills"
-                  :key="skill"
-                  class="tag-primary"
-                >
+                <span v-for="skill in category.skills" :key="skill" class="tag-primary">
                   {{ skill }}
                 </span>
               </div>
