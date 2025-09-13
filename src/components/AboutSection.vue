@@ -57,7 +57,7 @@ import { skillsData } from '@/data/skills'
               <li><strong>StillDev (2025, 3 mois) :</strong> Stage développeur fullstack - Vue.js, FastAPI, Docker</li>
               <li><strong>Freelance (Depuis 2025) :</strong> Développement web et applications notamment pour StillDev</li>
             </ul>
-            <router-link to="/experiences" class="btn btn-primary">Plus d'informations</router-link>
+            <router-link to="/experiences" class="btn btn-primary btn-info">Plus d'informations</router-link>
           </div>
         </div>
       </div>
@@ -100,6 +100,14 @@ import { skillsData } from '@/data/skills'
   color: #ffffff;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.btn-info{
+  background: #111827;
+}
+
+.dark-mode .btn-info{
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .btn:hover {
