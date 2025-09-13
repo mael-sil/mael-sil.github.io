@@ -1,55 +1,68 @@
 export const skillsData = {
   "categories": [
     {
-      "id": "frontend",
-      "title": "Frontend",
+      "id": "programming",
+      "title": "Langages de programmation",
       "skills": [
-        "Vue.js",
-        "HTML",
-        "CSS",
         "JavaScript",
         "TypeScript",
-        "WebSocket"
+        "Python",
+        "Java",
+        "PHP",
+        "C++",
+        "C"
       ]
     },
     {
       "id": "backend",
       "title": "Backend",
       "skills": [
+        "FastAPI",
         "Node.js",
         "Express.js",
         "Socket.io",
-        "FastAPI",
-        "PHP",
-        "Java",
-        "Python",
-        "C++"
+        "Temporal",
+        "WebSocket"
+      ]
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend",
+      "skills": [
+        "Vue.js",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "id": "database",
+      "title": "Base de données",
+      "skills": [
+        "PostgreSQL",
+        "PostGIS",
+        "Oracle SQL Developer",
+        "MySQL"
       ]
     },
     {
       "id": "devops",
-      "title": "DevOps & Outils",
+      "title": "DevOps & Versioning",
       "skills": [
         "Docker",
         "Git",
         "GitHub",
-        "GitLab",
-        "CI/CD",
-        "SQL",
-        "MySQL",
-        "UML"
+        "GitLab"
       ]
     },
     {
       "id": "scientific",
-      "title": "Programmation Scientifique",
+      "title": "Programmation scientifique",
       "skills": [
         "NumPy",
         "Matplotlib",
         "Pandas",
         "PyTorch",
-        "Matlab",
-        "Machine Learning"
+        "Matlab"
       ]
     }
   ]

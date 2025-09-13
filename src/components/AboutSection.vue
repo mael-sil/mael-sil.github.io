@@ -71,14 +71,16 @@ import { skillsData } from '@/data/skills'
             class="skill-category"
           >
             <h4>{{ category.title }}</h4>
-            <div class="skill-tags">
-              <span
-                v-for="skill in category.skills"
-                :key="skill"
-                class="tag-primary"
-              >
-                {{ skill }}
-              </span>
+            <div class="skill-tags-container">
+              <div class="skill-tags">
+                <span
+                  v-for="skill in category.skills"
+                  :key="skill"
+                  class="tag-primary"
+                >
+                  {{ skill }}
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -256,7 +258,7 @@ import { skillsData } from '@/data/skills'
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -277,6 +279,13 @@ import { skillsData } from '@/data/skills'
   color: white;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+}
+
+.skill-tags-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }
 
 .skill-tags {
