@@ -4,6 +4,7 @@ interface Project {
   description: string
   period: string
   link: string
+  source: string
   technologies: string[]
   type: 'group' | 'personal'
   status: 'in-progress' | 'completed'
@@ -17,7 +18,8 @@ export const projects: Project[] = [
     description:
       "Projet en groupe de 3 réalisé dans le cadre du BUT. Développement d'un jeu de sudoku multijoueur compétitif en temps réel, avec un système d'attaque entre joueurs.",
     period: 'Février 2025 - En cours',
-    link: 'https://forge.univ-lyon1.fr/sudonano/sudonano',
+    source: 'https://forge.univ-lyon1.fr/sudonano/sudonano',
+    link: 'https://sudonano.fr',
     technologies: ['Vue.js', 'Node.js', 'Socket.io', 'JavaScript', 'HTML/CSS'],
     type: 'group',
     status: 'in-progress',
@@ -29,7 +31,8 @@ export const projects: Project[] = [
     description:
       "Projet personnel de développement d'un site d'entraînement au calcul mental avec un système de renforcement adaptatif qui permet de revoir les erreurs.",
     period: 'Avril 2025 - En cours',
-    link: 'https://github.com/mael-sil/JeMultiplie',
+    source: 'https://github.com/mael-sil/JeMultiplie',
+    link: 'https://maelsilvestresiaz.fr/JeMultiplie',
     technologies: ['Vue.js', 'JavaScript', 'HTML/CSS', 'GitHub'],
     type: 'personal',
     status: 'in-progress',

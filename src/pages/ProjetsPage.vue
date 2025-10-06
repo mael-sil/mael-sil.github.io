@@ -51,23 +51,42 @@ import { projects } from '@/data/projects'
               </div>
 
               <!-- Project Link -->
-              <a
-                :href="project.link"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-              >
-                Voir le projet
-                <svg
-                  class="link-arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
+              <div class="link">
+                <a
+                  :href="project.link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-source"
                 >
-                  <path d="M7 17L17 7M17 7H7M17 7V17" />
-                </svg>
-              </a>
+                  Voir le projet
+                  <svg
+                    class="link-arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </a>
+                <a
+                  :href="project.source"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-source"
+                >
+                  Source
+                  <svg
+                    class="link-arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -305,7 +324,7 @@ import { projects } from '@/data/projects'
 }
 
 /* Project Link */
-.project-link {
+.project-source {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -319,7 +338,13 @@ import { projects } from '@/data/projects'
   background: transparent;
 }
 
-.project-link:hover {
+.link {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.project-source:hover {
   background: var(--text-secondary);
   color: var(--background-color);
   transform: translateY(-2px);
@@ -331,7 +356,7 @@ import { projects } from '@/data/projects'
   transition: transform 0.3s ease;
 }
 
-.project-link:hover .link-arrow {
+.project-source:hover .link-arrow {
   transform: translateX(3px) translateY(-3px);
 }
 
