@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import FormationCard from '@/components/FormationCard.vue';
+import FormationCard from '@/components/FormationCard.vue'
 import { formationSteps } from '@/data/formations'
 </script>
 
 <template>
-          <div class="page formation">
-         <div class="formation-container">
+  <div class="page formation">
+    <div class="formation-container">
       <!-- Route verticale avec scroll -->
       <div class="route-container">
         <div class="route-line"></div>
@@ -107,11 +107,16 @@ import { formationSteps } from '@/data/formations'
 }
 
 @keyframes pointPulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.2); opacity: 0.7; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
 }
-
-
 
 /* Animation d'entrée des étapes */
 .formation-step {
@@ -120,9 +125,15 @@ import { formationSteps } from '@/data/formations'
   transform: translateY(50px);
 }
 
-.step-1 { animation-delay: 0.1s; }
-.step-2 { animation-delay: 0.3s; }
-.step-3 { animation-delay: 0.5s; }
+.step-1 {
+  animation-delay: 0.1s;
+}
+.step-2 {
+  animation-delay: 0.3s;
+}
+.step-3 {
+  animation-delay: 0.5s;
+}
 
 @keyframes stepSlideIn {
   to {
@@ -147,8 +158,6 @@ import { formationSteps } from '@/data/formations'
     padding: 0;
   }
 
-
-
   .route-line {
     left: 2rem;
     top: 0;
@@ -158,6 +167,4 @@ import { formationSteps } from '@/data/formations'
     left: 0;
   }
 }
-
-
 </style>

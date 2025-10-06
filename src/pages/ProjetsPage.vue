@@ -1,10 +1,9 @@
 <script setup lang="ts">
 // Page de projets
 defineOptions({
-  name: 'ProjetsPage'
+  name: 'ProjetsPage',
 })
 import { projects } from '@/data/projects'
-
 </script>
 
 <template>
@@ -46,11 +45,7 @@ import { projects } from '@/data/projects'
             <div class="project-content-bottom">
               <!-- Technologies -->
               <div class="project-technologies">
-                <span
-                  v-for="tech in project.technologies"
-                  :key="tech"
-                  class="tag-primary"
-                >
+                <span v-for="tech in project.technologies" :key="tech" class="tag-primary">
                   {{ tech }}
                 </span>
               </div>
@@ -63,8 +58,14 @@ import { projects } from '@/data/projects'
                 class="project-link"
               >
                 Voir le projet
-                <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                <svg
+                  class="link-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
                 </svg>
               </a>
             </div>
@@ -294,8 +295,13 @@ import { projects } from '@/data/projects'
 }
 
 @keyframes statusPulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 /* Project Link */

@@ -12,52 +12,63 @@ import { skillsData } from '@/data/skills'
       <div class="about-content">
         <div class="about-text">
           <p class="about-intro">
-            Étudiant passionné en informatique, je suis actuellement en troisième année de BUT informatique à l'IUT
-            Lyon 1 après une année spéciale qui combine les deux premières années du BUT en un an.
+            Étudiant passionné en informatique, je suis actuellement en troisième année de BUT
+            informatique à l'IUT Lyon 1 après une année spéciale qui combine les deux premières
+            années du BUT en un an.
           </p>
 
           <p>
-            Je suis particulièrement intéressé par le développement fullstack, le développement backend ainsi que
-            l'approfondissement de mes connaissances en DevOps. Mon objectif est de contribuer à des projets innovants
-            tout en consolidant mes compétences techniques au sein d'une équipe dynamique.
+            Je suis particulièrement intéressé par le développement fullstack, le développement
+            backend ainsi que l'approfondissement de mes connaissances en DevOps. Mon objectif est
+            de contribuer à des projets innovants tout en consolidant mes compétences techniques au
+            sein d'une équipe dynamique.
           </p>
 
           <p>
-            Mon parcours est atypique puisque j'ai commencé mes études supérieures en physique, ce qui m'a permis
-            d'acquérir une approche méthodique et rigoureuse. Je me suis ensuite réorienté vers l'informatique qui est
-            un domaine qui m'a toujours intéressé et qui me permet de travailler sur des projets plus concrets.
+            Mon parcours est atypique puisque j'ai commencé mes études supérieures en physique, ce
+            qui m'a permis d'acquérir une approche méthodique et rigoureuse. Je me suis ensuite
+            réorienté vers l'informatique qui est un domaine qui m'a toujours intéressé et qui me
+            permet de travailler sur des projets plus concrets.
           </p>
           <p>
-            Lors de mon expérience récente de 12 semaines en tant que stagiaire développeur fullstack chez Stilldev,
-            j'ai contribué au développement d'une plateforme B2B avec Vue.js et FastAPI. Ce qui m'a permis de consolider
-            mes compétences techniques et découvrir les pratiques DevOps en contexte professionnel.
+            Lors de mon expérience récente de 12 semaines en tant que stagiaire développeur
+            fullstack chez Stilldev, j'ai contribué au développement d'une plateforme B2B avec
+            Vue.js et FastAPI. Ce qui m'a permis de consolider mes compétences techniques et
+            découvrir les pratiques DevOps en contexte professionnel.
           </p>
         </div>
 
         <div class="about-highlights">
           <div class="highlight-card search-card">
             <h3>
-              <img src="/bullseye.svg" alt="bullseye" width="25" height="25">
+              <img src="/bullseye.svg" alt="bullseye" width="25" height="25" />
               Alternance
             </h3>
             <p>
               <strong>Actuellement en recherche d'une alternance d'un an</strong> à partir de
-              septembre 2025 dans le domaine du développement fullstack/backend, avec un rythme d'une
-              semaine en entreprise pour une semaine en formation.
+              septembre 2025 dans le domaine du développement fullstack/backend, avec un rythme
+              d'une semaine en entreprise pour une semaine en formation.
             </p>
           </div>
 
           <div class="highlight-card experience-card">
             <h3>
-              <img src="/briefcase.svg" alt="briefcase" width="25" height="25">
+              <img src="/briefcase.svg" alt="briefcase" width="25" height="25" />
               Expérience Professionnelle
             </h3>
             <ul>
-              <li><strong>StillDev (2025, 3 mois) :</strong> Stage développeur fullstack - Vue.js, FastAPI, Docker</li>
-              <li><strong>Freelance (Depuis 2025) :</strong> Développement web et applications notamment pour StillDev
+              <li>
+                <strong>StillDev (2025, 3 mois) :</strong> Stage développeur fullstack - Vue.js,
+                FastAPI, Docker
+              </li>
+              <li>
+                <strong>Freelance (Depuis 2025) :</strong> Développement web et applications
+                notamment pour StillDev
               </li>
             </ul>
-            <router-link to="/experiences" class="btn btn-primary btn-info">Plus d'informations</router-link>
+            <router-link to="/experiences" class="btn btn-primary btn-info"
+              >Plus d'informations</router-link
+            >
           </div>
         </div>
       </div>
@@ -90,17 +101,20 @@ import { skillsData } from '@/data/skills'
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 0.15s ease, filter 0.15s ease, background 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    filter 0.15s ease,
+    background 0.15s ease;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-.btn-info{
+.btn-info {
   background: #111827;
 }
 
-.dark-mode .btn-info{
+.dark-mode .btn-info {
   background: rgba(255, 255, 255, 0.15);
 }
 
@@ -116,7 +130,9 @@ import { skillsData } from '@/data/skills'
   align-items: center;
 }
 
-.experience-card h3, .experience-card p, .experience-card ul {
+.experience-card h3,
+.experience-card p,
+.experience-card ul {
   width: 100%;
 }
 
@@ -176,8 +192,6 @@ import { skillsData } from '@/data/skills'
   line-height: 1.7;
   margin: 0;
 }
-
-
 
 .about-highlights {
   display: flex;
@@ -273,7 +287,7 @@ import { skillsData } from '@/data/skills'
   font-size: 1.2rem;
 }
 
-.skill-tags-container{
+.skill-tags-container {
   display: flex;
   flex-direction: column;
   justify-content: center;

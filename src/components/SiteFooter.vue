@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Composant Footer
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 </script>
 
 <template>
@@ -8,12 +8,11 @@ const currentYear = new Date().getFullYear();
     <div class="footer-content">
       <span class="footer-text">
         <div class="footer-left">
-          Icônes: <a href="https://fontawesome.com/" target="_blank" rel="noopener">FontAwesome</a> •
+          Icônes:
+          <a href="https://fontawesome.com/" target="_blank" rel="noopener">FontAwesome</a> •
           Emojis: <a href="https://openmoji.org/" target="_blank" rel="noopener">OpenMoji</a>
         </div>
-        <div class="footer-right">
-          {{ currentYear }} | Mael Silvestre-Siaz
-        </div>
+        <div class="footer-right">{{ currentYear }} | Mael Silvestre-Siaz</div>
       </span>
     </div>
   </footer>

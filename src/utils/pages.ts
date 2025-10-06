@@ -10,40 +10,40 @@ export const pages: PageInfo[] = [
   {
     name: 'Accueil',
     path: '/',
-    title: 'Accueil'
+    title: 'Accueil',
   },
   {
     name: 'Formation',
     path: '/formation',
-    title: 'Formation'
+    title: 'Formation',
   },
   {
     name: 'Projets',
     path: '/projets',
-    title: 'Projets'
+    title: 'Projets',
   },
   {
     name: 'Experiences',
     path: '/experiences',
-    title: 'Expériences'
+    title: 'Expériences',
   },
   {
     name: 'Contact',
     path: '/contact',
-    title: 'Contact'
-  }
+    title: 'Contact',
+  },
 ]
 
 // Fonction pour obtenir l'index d'une page basée sur son chemin
 export function getPageIndex(path: string): number {
-  return pages.findIndex(page => page.path === path)
+  return pages.findIndex((page) => page.path === path)
 }
 
 // Fonction pour obtenir les routes pour le router
 export function getRoutes() {
-  return pages.map(page => ({
+  return pages.map((page) => ({
     path: page.path,
     name: page.name,
-    component: () => import(`../pages/${page.name}Page.vue`)
+    component: () => import(`../pages/${page.name}Page.vue`),
   }))
 }

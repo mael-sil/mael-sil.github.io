@@ -9,13 +9,18 @@ import AboutSection from '@/components/AboutSection.vue'
     <section class="hero">
       <!-- Bubble Background -->
       <div class="bubbles">
-        <div class="bubble" v-for="n in 30" :key="n" :style="{
-          '--index': n,
-          '--total': 30,
-          '--size': `${Math.random() * 60 + 30}px`,
-          '--offset': `${Math.random() * 40 - 20}%`,
-          '--delay': `${Math.random() * 15 + 2}s`
-        }"></div>
+        <div
+          class="bubble"
+          v-for="n in 30"
+          :key="n"
+          :style="{
+            '--index': n,
+            '--total': 30,
+            '--size': `${Math.random() * 60 + 30}px`,
+            '--offset': `${Math.random() * 40 - 20}%`,
+            '--delay': `${Math.random() * 15 + 2}s`,
+          }"
+        ></div>
       </div>
 
       <div class="hero-content">
@@ -25,23 +30,24 @@ import AboutSection from '@/components/AboutSection.vue'
         </div>
       </div>
       <div class="hero-bottom">
-            <div class="hero-actions">
-              <RouterLink to="/projets" class="btn btn-primary">Voir mes projets</RouterLink>
-              <RouterLink to="/contact" class="btn btn-secondary">Me contacter</RouterLink>
-              <a class="btn btn-ghost" href="https://github.com/mael-sil" target="_blank" rel="noopener">GitHub</a>
-            </div>
-            <ul class="hero-tags">
-              <li class="tag-primary">Vue.js</li>
-              <li class="tag-primary">Node.js</li>
-              <li class="tag-primary">FastAPI</li>
-
-            </ul>
-            <ul class="hero-tags">
-              <li class="tag-primary">Docker</li>
-              <li class="tag-primary">SQL</li>
-              <li class="tag-primary">...</li>
-            </ul>
-          </div>
+        <div class="hero-actions">
+          <RouterLink to="/projets" class="btn btn-primary">Voir mes projets</RouterLink>
+          <RouterLink to="/contact" class="btn btn-secondary">Me contacter</RouterLink>
+          <a class="btn btn-ghost" href="https://github.com/mael-sil" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </div>
+        <ul class="hero-tags">
+          <li class="tag-primary">Vue.js</li>
+          <li class="tag-primary">Node.js</li>
+          <li class="tag-primary">FastAPI</li>
+        </ul>
+        <ul class="hero-tags">
+          <li class="tag-primary">Docker</li>
+          <li class="tag-primary">SQL</li>
+          <li class="tag-primary">...</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Main Content -->
@@ -177,15 +183,29 @@ import AboutSection from '@/components/AboutSection.vue'
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 0.15s ease, filter 0.15s ease, background 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    filter 0.15s ease,
+    background 0.15s ease;
   color: #ffffff;
 }
 
-.btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
 
-.btn-primary { background: #111827; }
-.btn-secondary { background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.35); }
-.btn-ghost { background: transparent; border: 1px dashed rgba(255, 255, 255, 0.4); }
+.btn-primary {
+  background: #111827;
+}
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+}
 
 .hero-tags {
   display: flex;

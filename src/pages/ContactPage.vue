@@ -27,7 +27,12 @@
         </div>
         <h3>LinkedIn</h3>
         <p>Connectons-nous professionnellement</p>
-        <a href="https://www.linkedin.com/in/mael-silvestre-siaz" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <a
+          href="https://www.linkedin.com/in/mael-silvestre-siaz"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
           Voir mon profil
         </a>
       </div>
@@ -38,7 +43,12 @@
         </div>
         <h3>GitHub</h3>
         <p>Découvrez mes projets</p>
-        <a href="https://github.com/mael-sil" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <a
+          href="https://github.com/mael-sil"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
           Voir mon GitHub
         </a>
       </div>
@@ -89,7 +99,6 @@ h1 {
   text-align: center;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 
 .contact-card:hover {
   transform: translateY(-10px);

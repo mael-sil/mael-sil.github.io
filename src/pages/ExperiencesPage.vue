@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // Page des expériences professionnelles
 defineOptions({
-  name: 'ExperiencesPage'
+  name: 'ExperiencesPage',
 })
 
 import { experiences } from '@/data/experiences'
@@ -13,7 +13,9 @@ import { experiences } from '@/data/experiences'
       <!-- Header Section -->
       <div class="experiences-header">
         <h1>Mes Expériences</h1>
-        <p class="experiences-subtitle">Découvrez mon parcours professionnel et mes réalisations en entreprise</p>
+        <p class="experiences-subtitle">
+          Découvrez mon parcours professionnel et mes réalisations en entreprise
+        </p>
       </div>
 
       <!-- Experiences Grid -->
@@ -31,7 +33,13 @@ import { experiences } from '@/data/experiences'
 
               <!-- Experience Type Badge -->
               <div class="experience-type-badge" :class="experience.type">
-                {{ experience.type === 'stage' ? 'Stage' : experience.type === 'alternance' ? 'Alternance' : 'Emploi' }}
+                {{
+                  experience.type === 'stage'
+                    ? 'Stage'
+                    : experience.type === 'alternance'
+                      ? 'Alternance'
+                      : 'Emploi'
+                }}
               </div>
             </div>
           </div>
@@ -63,11 +71,7 @@ import { experiences } from '@/data/experiences'
               <div class="experience-technologies">
                 <h4>Technologies utilisées :</h4>
                 <div class="tech-tags">
-                  <span
-                    v-for="tech in experience.technologies"
-                    :key="tech"
-                    class="tag-primary"
-                  >
+                  <span v-for="tech in experience.technologies" :key="tech" class="tag-primary">
                     {{ tech }}
                   </span>
                 </div>
@@ -307,7 +311,6 @@ import { experiences } from '@/data/experiences'
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-
 
 /* CTA Section */
 .cta-section {

@@ -41,7 +41,7 @@ onMounted(() => {
       <button
         class="mobile-menu-toggle"
         @click="toggleMobileMenu"
-        :class="{ 'active': isMobileMenuOpen }"
+        :class="{ active: isMobileMenuOpen }"
         aria-label="Menu principal"
       >
         <span class="burger-line"></span>
@@ -77,7 +77,7 @@ onMounted(() => {
       </div>
 
       <!-- Menu mobile -->
-      <div class="mobile-menu" :class="{ 'open': isMobileMenuOpen }">
+      <div class="mobile-menu" :class="{ open: isMobileMenuOpen }">
         <div class="mobile-menu-content">
           <div
             v-for="page in pages"
@@ -94,10 +94,7 @@ onMounted(() => {
       </div>
 
       <!-- Cellule glass qui slide (cachée sur mobile) -->
-      <div
-        class="glass-slider"
-        :style="{ transform: glassSliderTransform }"
-      ></div>
+      <div class="glass-slider" :style="{ transform: glassSliderTransform }"></div>
     </div>
   </nav>
 </template>
@@ -116,7 +113,7 @@ onMounted(() => {
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-pill);
-  padding: 0.50rem 1rem;
+  padding: 0.5rem 1rem;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -181,7 +178,9 @@ onMounted(() => {
   box-shadow:
     0 4px 16px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease, box-shadow 0.3s ease 0.1s;
+  transition:
+    all 0.3s ease,
+    box-shadow 0.3s ease 0.1s;
 }
 
 .nav-link {
@@ -293,7 +292,6 @@ onMounted(() => {
   display: none;
 }
 
-
 .mobile-menu.open {
   opacity: 1;
   visibility: visible;
@@ -362,7 +360,7 @@ onMounted(() => {
   }
 
   .navbar {
-    padding: 0.50rem 0.75rem;
+    padding: 0.5rem 0.75rem;
   }
 
   .navbar-content {

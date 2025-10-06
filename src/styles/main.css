@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   border: none;
@@ -51,7 +52,9 @@ body {
 
 /* Transitions pour le mode sombre */
 * {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Éliminer tout liseré potentiel */
@@ -60,7 +63,6 @@ body {
   border: none;
   outline: none;
 }
-
 
 .tag-primary {
   list-style: none;

@@ -1,19 +1,19 @@
 <script setup lang="ts">
 interface FormationStep {
-  id: string;
-  title: string;
-  institution: string;
-  period: string;
-  description: string;
-  skills: string[];
-  icon: string;
+  id: string
+  title: string
+  institution: string
+  period: string
+  description: string
+  skills: string[]
+  icon: string
 }
 
 interface Props {
-  step: FormationStep;
+  step: FormationStep
 }
 
-defineProps<Props>();
+defineProps<Props>()
 </script>
 
 <template>
@@ -27,11 +27,7 @@ defineProps<Props>();
       <p class="card-period">{{ step.period }}</p>
       <p class="card-description">{{ step.description }}</p>
       <div class="card-skills">
-        <span
-          v-for="skill in step.skills"
-          :key="skill"
-          class="tag-primary"
-        >
+        <span v-for="skill in step.skills" :key="skill" class="tag-primary">
           {{ skill }}
         </span>
       </div>
@@ -130,8 +126,6 @@ defineProps<Props>();
 .dark-mode .formation-card {
   background: linear-gradient(135deg, var(--primary-color) 0%, #667eea 100%);
 }
-
-
 
 /* Responsive design */
 @media (max-width: 768px) {

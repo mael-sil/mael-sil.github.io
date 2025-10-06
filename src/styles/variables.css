@@ -4,20 +4,20 @@
 
   /* Couleurs de fond */
   --background-color: #f8f9fa;
-  
+
   /* Couleurs principales */
   --primary-color: #deeaf7;
   --secondary-color: #f8f9fa;
   --tertiary-color: #e2e8f0;
-  
+
   /* Couleurs de texte */
   --text-primary: #000000;
   --text-secondary: #1a365d;
-  
+
   /* Couleurs d'ombre */
   --shadow-light: 0 8px 32px rgba(0, 0, 0, 0.1);
   --shadow-dark: 0 8px 32px rgba(0, 0, 0, 0.3);
-  
+
   /* Couleurs de bordure */
   --border-radius: 25px;
 }
@@ -31,11 +31,11 @@ html.dark-mode {
   --primary-color: #1a365d;
   --secondary-color: rgba(30, 30, 30, 0.95);
   --tertiary-color: rgba(255, 255, 255, 0.1);
-  
+
   /* Couleurs de texte */
   --text-primary: #fff;
   --text-secondary: #afd2f8;
-  
+
   /* Couleurs d'ombre */
   --shadow-light: 0 8px 32px rgba(0, 0, 0, 0.3);
   --shadow-dark: 0 8px 32px rgba(0, 0, 0, 0.5);
