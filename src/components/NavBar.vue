@@ -145,7 +145,7 @@ onMounted(() => {
   z-index: 2;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
-  min-width: 120px;
+  min-width: 128px;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -197,7 +197,7 @@ onMounted(() => {
   position: absolute;
   left: 0;
   top: 0;
-  width: 120px;
+  width: 128px;
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
