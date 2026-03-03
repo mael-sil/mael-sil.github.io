@@ -14,6 +14,24 @@ interface Experience {
 
 export const experiences: Experience[] = [
   {
+    id: 'mappia',
+    title: 'Développeur fullstack en alternance',
+    company: 'MAPPIA',
+    period: 'Octobre 2025 - En cours',
+    duration: '6 mois',
+    description:
+      "Alternance en développement fullstack sur la plateforme SaaS GOVALID, impliquant des migrations technologiques et le développement de nouvelles fonctionnalités.",
+    achievements: [
+      'Développement de fonctionnalités backend/frontend sur la plateforme SaaS GOVALID',
+      "Portage de l'interface AngularJS vers Vue.js",
+      "Portage de l'infrastructure IIS vers Node.js",
+    ],
+    technologies: ['Vue.js', 'Node.js', 'JavaScript', 'Vuetify'],
+    type: 'alternance',
+    status: 'in-progress',
+    icon: './briefcase.svg',
+  },
+  {
     id: 'stillnetwork / StillDev',
     title: 'Stagiaire développeur fullstack Vue.js / Python',
     company: 'Stillnetwork / StillDev',

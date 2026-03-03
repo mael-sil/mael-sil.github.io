@@ -34,8 +34,9 @@ export const formationSteps: FormationStep[] = [
     title: 'Bachelor universitaire de technologie en informatique',
     institution: 'IUT Lyon 1',
     period: '2024 - en cours',
-    description: 'BUT en année spéciale combinant les deux premières années en une seule.',
-    skills: ['Java', 'Vue.js', 'JavaScript', 'TypeScript', 'PHP', 'SQL', 'Git', 'Docker', 'Linux'],
+    description:
+      "BUT informatique parcours réalisation d'applications avec 3e année en alternance. Année spéciale (BUT1+BUT2 combinées en un an) validée en 2025.",
+    skills: ['Java', 'Vue.js', 'JavaScript', 'TypeScript', 'PHP', 'SQL', 'Git', 'Docker', 'Linux', 'MongoDB', 'Neo4j'],
     icon: './computer.svg',
   },
-]
+].reverse()

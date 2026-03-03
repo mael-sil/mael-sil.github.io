@@ -12,29 +12,27 @@ import { skillsData } from '@/data/skills'
       <div class="about-content">
         <div class="about-text">
           <p class="about-intro">
-            Étudiant passionné en informatique, je suis actuellement en troisième année de BUT
-            informatique à l'IUT Lyon 1 après une année spéciale qui combine les deux premières
-            années du BUT en un an.
+            Développeur fullstack avec expérience en alternance et en stage, je recherche une
+            alternance de 3 ans dans le cadre d'un cycle ingénieur en informatique, à partir de
+            septembre 2026, sur Lyon et alentours.
           </p>
 
           <p>
-            Je suis particulièrement intéressé par le développement fullstack, le développement
-            backend ainsi que l'approfondissement de mes connaissances en DevOps. Mon objectif est
-            de contribuer à des projets innovants tout en consolidant mes compétences techniques au
-            sein d'une équipe dynamique.
+            Particulièrement intéressé par le développement fullstack et backend, le DevOps et la
+            cybersécurité, mon objectif est de contribuer à des projets innovants tout en
+            consolidant mes compétences techniques au sein d'une équipe dynamique.
           </p>
 
           <p>
-            Mon parcours est atypique puisque j'ai commencé mes études supérieures en physique, ce
-            qui m'a permis d'acquérir une approche méthodique et rigoureuse. Je me suis ensuite
-            réorienté vers l'informatique qui est un domaine qui m'a toujours intéressé et qui me
-            permet de travailler sur des projets plus concrets.
+            Mon parcours est atypique : après un Bachelor en physique (Université de Genève) et une
+            première année de master à l'EPFL, je me suis réorienté vers l'informatique via l'année
+            spéciale du BUT, un cursus accéléré combinant BUT1 et BUT2 en un an. Cette reconversion
+            réussie témoigne de mon autonomie et de ma capacité d'adaptation.
           </p>
           <p>
-            Lors de mon expérience récente de 12 semaines en tant que stagiaire développeur
-            fullstack chez Stilldev, j'ai contribué au développement d'une plateforme B2B avec
-            Vue.js et FastAPI. Ce qui m'a permis de consolider mes compétences techniques et
-            découvrir les pratiques DevOps en contexte professionnel.
+            Mon autonomie, ma capacité d'apprentissage rapide et mon expérience concrète en
+            développement fullstack — chez MAPPIA en alternance et chez StillDev en stage — me
+            permettront de contribuer efficacement à vos projets dès le début de l'alternance.
           </p>
         </div>
 
@@ -42,12 +40,12 @@ import { skillsData } from '@/data/skills'
           <div class="highlight-card search-card">
             <h3>
               <img src="/bullseye.svg" alt="bullseye" width="25" height="25" />
-              Alternance
+              Recherche d'alternance
             </h3>
             <p>
-              <strong>Actuellement en recherche d'une alternance d'un an</strong> à partir de
-              septembre 2025 dans le domaine du développement fullstack/backend, avec un rythme
-              d'une semaine en entreprise pour une semaine en formation.
+              <strong>En recherche d'une alternance de 3 ans</strong> dans le cadre d'un cycle
+              ingénieur en informatique, à partir de septembre 2026, sur Lyon et alentours.
+              Développement fullstack/backend, DevOps, cybersécurité.
             </p>
           </div>
 
@@ -58,12 +56,12 @@ import { skillsData } from '@/data/skills'
             </h3>
             <ul>
               <li>
-                <strong>StillDev (2025, 3 mois) :</strong> Stage développeur fullstack - Vue.js,
-                FastAPI, Docker
+                <strong>MAPPIA (oct. 2025 - en cours) :</strong> Alternance développeur fullstack -
+                Vue.js, Node.js
               </li>
               <li>
-                <strong>Freelance (Depuis 2025) :</strong> Développement web et applications
-                notamment pour StillDev
+                <strong>StillDev (2025, 3 mois) :</strong> Stage développeur fullstack - Vue.js,
+                FastAPI, Docker
               </li>
             </ul>
             <router-link to="/experiences" class="btn btn-primary btn-info"

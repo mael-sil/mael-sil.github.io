@@ -3,12 +3,12 @@ export const skillsData = {
     {
       id: 'programming',
       title: 'Langages de programmation',
-      skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'PHP', 'C++', 'C'],
+      skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C++', 'C'],
     },
     {
       id: 'backend',
       title: 'Backend',
-      skills: ['FastAPI', 'Node.js', 'Express.js', 'Socket.io', 'WebSocket', 'Temporal'],
+      skills: ['FastAPI', 'Node.js', 'Nest.js', 'Socket.io', 'WebSocket', 'Temporal'],
     },
     {
       id: 'frontend',
@@ -18,17 +18,17 @@ export const skillsData = {
     {
       id: 'database',
       title: 'Base de données',
-      skills: ['PostgreSQL', 'PostGIS', 'Oracle SQL Developer', 'MySQL'],
+      skills: ['PostgreSQL', 'PostGIS', 'MongoDB', 'Neo4j'],
     },
     {
       id: 'devops',
       title: 'DevOps & Versioning',
-      skills: ['Docker', 'Git', 'GitHub', 'GitLab'],
+      skills: ['Docker', 'Ansible', 'Kubernetes', 'Git', 'GitHub', 'GitLab'],
     },
     {
       id: 'scientific',
       title: 'Programmation scientifique',
-      skills: ['NumPy', 'Pandas', 'Matplotlib', 'PyTorch', 'Matlab'],
+      skills: ['NumPy', 'Pandas', 'Matplotlib', 'PyTorch', 'MATLAB'],
     },
   ],
 }
