@@ -31,7 +31,7 @@ import { skillsData } from '@/data/skills'
           </p>
           <p>
             Mon autonomie, ma capacité d'apprentissage rapide et mon expérience concrète en
-            développement fullstack — chez MAPPIA en alternance et chez StillDev en stage — me
+            développement fullstack - chez MAPPIA en alternance et chez StillDev en stage - me
             permettront de contribuer efficacement à vos projets dès le début de l'alternance.
           </p>
         </div>
@@ -40,12 +40,12 @@ import { skillsData } from '@/data/skills'
           <div class="highlight-card search-card">
             <h3>
               <img src="/bullseye.svg" alt="bullseye" width="25" height="25" />
-              Recherche d'alternance
+              En recherche active
             </h3>
             <p>
-              <strong>En recherche d'une alternance de 3 ans</strong> dans le cadre d'un cycle
-              ingénieur en informatique, à partir de septembre 2026, sur Lyon et alentours.
-              Développement fullstack/backend, DevOps, cybersécurité.
+              <strong>Actuellement en recherche active d'une alternance de 3 ans</strong> dans le
+              cadre d'un cycle ingénieur en informatique, à partir de septembre 2026, sur Lyon et
+              alentours. Développement fullstack/backend, DevOps, cybersécurité.
             </p>
           </div>
 

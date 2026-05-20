@@ -26,6 +26,19 @@ export const projects: Project[] = [
     icon: './alien.svg',
   },
   {
+    id: 'nexus',
+    title: 'Nexus – Suivi de Cursus',
+    description:
+      'Projet de groupe réalisé dans le cadre du BUT. Application fullstack de suivi de parcours étudiant, avec authentification, gestion des rôles, import de données, visualisation et déploiement sur serveur VPS.',
+    period: '2025',
+    source: '',
+    link: '',
+    technologies: ['NestJS', 'Vue.js', 'PostgreSQL', 'Docker', 'Nginx'],
+    type: 'group',
+    status: 'completed',
+    icon: './book.svg',
+  },
+  {
     id: 'jemultiplie',
     title: 'JeMultiplie',
     description:

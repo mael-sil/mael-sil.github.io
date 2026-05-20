@@ -22,11 +22,11 @@ export const experiences: Experience[] = [
     description:
       "Alternance en développement fullstack sur la plateforme SaaS GOVALID, impliquant des migrations technologiques et le développement de nouvelles fonctionnalités.",
     achievements: [
-      'Développement de fonctionnalités backend/frontend sur la plateforme SaaS GOVALID',
-      "Portage de l'interface AngularJS vers Vue.js",
-      "Portage de l'infrastructure IIS vers Node.js",
+      "Migration complète de l'interface AngularJS vers Vue.js : visualisation géographique, gestion des droits par rôle, upload de fichiers, contrôle de partage",
+      "Optimisation de l'affichage des listes de données : temps de rendu réduit de plusieurs secondes à quasi-instantané",
+      "POC Node.js et Rust pour remplacer l'infrastructure IIS (performance et compatibilité)",
     ],
-    technologies: ['Vue.js', 'Node.js', 'JavaScript', 'Vuetify'],
+    technologies: ['Vue.js', 'Node.js', 'JavaScript', 'Vuetify', 'Rust'],
     type: 'alternance',
     status: 'in-progress',
     icon: './briefcase.svg',

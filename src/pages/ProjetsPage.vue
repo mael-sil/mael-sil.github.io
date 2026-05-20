@@ -39,7 +39,6 @@ import { projects } from '@/data/projects'
           <div class="project-content">
             <div class="project-content-text">
               <h3 class="project-title">{{ project.title }}</h3>
-              <p class="project-period">{{ project.period }}</p>
               <p class="project-description">{{ project.description }}</p>
             </div>
             <div class="project-content-bottom">
@@ -53,6 +52,7 @@ import { projects } from '@/data/projects'
               <!-- Project Link -->
               <div class="link">
                 <a
+                  v-if="project.link"
                   :href="project.link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -70,6 +70,7 @@ import { projects } from '@/data/projects'
                   </svg>
                 </a>
                 <a
+                  v-if="project.source"
                   :href="project.source"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -252,12 +253,6 @@ import { projects } from '@/data/projects'
   margin-bottom: 0.5rem;
 }
 
-.project-period {
-  color: var(--text-secondary);
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
 
 .project-description {
   color: var(--text-primary);
